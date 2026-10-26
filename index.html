@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Politique de confidentialité — Near Pass</title>
+<meta name="description" content="Politique de confidentialité de l'application Android Near Pass.">
+<style>
+  :root { color-scheme: light dark; --bg:#fafafa; --fg:#1d1b20; --muted:#5f5b66; --accent:#2f5bea; --card:#ffffff; --line:#e3e1e8; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#141318; --fg:#e8e6ec; --muted:#a9a5b1; --accent:#8fa8ff; --card:#1d1b22; --line:#2f2c36; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:720px; margin:0 auto; padding:32px 16px 64px; }
+  h1 { font-size:1.9rem; line-height:1.2; margin:0 0 4px; }
+  h2 { font-size:1.2rem; margin:2rem 0 .4rem; }
+  .date { color:var(--muted); margin:0 0 1.5rem; }
+  .summary { background:var(--card); border:1px solid var(--line); border-left:4px solid var(--accent); border-radius:10px; padding:14px 16px; }
+  ul { padding-left:1.2rem; } li { margin:.35rem 0; }
+  a { color:var(--accent); }
+  footer { margin-top:3rem; color:var(--muted); font-size:.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Politique de confidentialité — Near Pass</h1>
+  <p class="date">Dernière mise à jour : 26 octobre 2026</p>
+
+  <p>Near Pass est une application Android qui permet de voir quand des amis sont à proximité, grâce au Bluetooth Low Energy et à l'Ultra-Wideband (UWB).</p>
+  <p class="summary"><strong>En résumé : Near Pass n'envoie aucune donnée à un serveur. Tout reste sur ton téléphone.</strong></p>
+
+  <h2>Données utilisées</h2>
+  <p>Ces informations sont créées et stockées uniquement sur ton téléphone :</p>
+  <ul>
+    <li><strong>Ton identité dans l'appli</strong> : un identifiant aléatoire, le nom que tu choisis, et une clé secrète aléatoire. Ils servent à générer ton QR code.</li>
+    <li><strong>Ta liste d'amis</strong> : pour chaque ami, le nom, l'identifiant et la clé qui figuraient dans son QR code.</li>
+    <li><strong>Tes réglages</strong> : par exemple l'activation de la détection en arrière-plan.</li>
+  </ul>
+  <p>Near Pass n'a pas de compte utilisateur, pas de serveur, pas de publicité, pas d'outil de statistiques et pas de service de suivi. Aucune donnée n'est collectée, vendue ni partagée avec des tiers.</p>
+
+  <h2>Ce que voient les autres</h2>
+  <ul>
+    <li>En Bluetooth, ton téléphone diffuse un <strong>jeton aléatoire qui change toutes les 10 minutes</strong>. Il ne contient ni ton nom, ni ton identifiant. Seules les personnes qui ont scanné ton QR code peuvent le reconnaître.</li>
+    <li>Le QR code contient ton nom, ton identifiant et ta clé secrète. <strong>Ne le montre qu'à des personnes de confiance.</strong> Quiconque le scanne peut te reconnaître à proximité. Le bouton « Régénérer mon code » révoque l'accès de tous les amis actuels.</li>
+    <li>Quand l'UWB est utilisé, des paramètres de session sont échangés en Bluetooth avec l'ami concerné, chiffrés avec la clé partagée. Ils ne servent qu'à mesurer la distance et la direction pendant la session.</li>
+  </ul>
+
+  <h2>Autorisations demandées</h2>
+  <ul>
+    <li><strong>Appareils à proximité (Bluetooth, UWB)</strong> : détecter tes amis et mesurer la distance. Near Pass n'utilise pas ta position géographique.</li>
+    <li><strong>Appareil photo</strong> : uniquement pour scanner le QR code d'un ami. Aucune image n'est enregistrée ni envoyée.</li>
+    <li><strong>Notifications</strong> : t'avertir quand un ami arrive à proximité et afficher la notification obligatoire du service d'arrière-plan.</li>
+    <li><strong>Service au premier plan</strong> : garder la détection active quand l'appli est fermée, si tu actives l'option « Détection en arrière-plan ». Une notification permanente est alors affichée, avec un bouton pour l'arrêter.</li>
+  </ul>
+
+  <h2>Tes droits</h2>
+  <p>Tout étant stocké sur ton téléphone, tu gardes le contrôle : tu peux retirer un ami à tout moment (appui long sur sa fiche), régénérer ton code, ou supprimer toutes les données en désinstallant l'application ou en effaçant son stockage dans les réglages Android.</p>
+
+  <h2>Enfants</h2>
+  <p>Near Pass ne s'adresse pas aux enfants de moins de 13 ans.</p>
+
+  <h2>Contact</h2>
+  <p>Pour toute question : <a href="mailto:contact@grandpaname.fun">contact@grandpaname.fun</a></p>
+
+  <h2>Modifications</h2>
+  <p>Si cette politique change, la nouvelle version sera publiée à cette adresse avec une nouvelle date de mise à jour.</p>
+
+  <footer>Near Pass · app.nearpass</footer>
+</main>
+</body>
+</html>
