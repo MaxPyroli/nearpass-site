@@ -23,7 +23,7 @@
 <body>
 <main>
   <h1>Politique de confidentialité — Near Pass</h1>
-  <p class="date">Dernière mise à jour : 26 octobre 2026</p>
+  <p class="date">Dernière mise à jour : 30 octobre 2026</p>
 
   <p>Near Pass est une application Android qui permet de voir quand des amis sont à proximité, grâce au Bluetooth Low Energy et à l'Ultra-Wideband (UWB).</p>
   <p class="summary"><strong>En résumé : Near Pass n'envoie aucune donnée à un serveur. Tout reste sur ton téléphone.</strong></p>
@@ -47,6 +47,12 @@
   <h2>Ajout d'un ami « à proximité »</h2>
   <p>Quand tu ouvres l'écran « Ajouter à proximité », ton téléphone diffuse en Bluetooth, <strong>uniquement tant que cet écran reste ouvert</strong>, un identifiant aléatoire temporaire et ton prénom. Ils sont visibles des personnes proches qui ont aussi ouvert cet écran. Rien n'est diffusé en dehors de ce moment.</p>
   <p>L'échange d'identités ne se fait qu'après que <strong>les deux personnes ont comparé et validé le même code à six chiffres</strong> affiché sur leurs téléphones. Il est chiffré de bout en bout entre les deux téléphones : un tiers qui écoute en Bluetooth ne peut pas le lire, et une personne qui chercherait à s'interposer obtiendrait un code différent sur chaque téléphone.</p>
+
+  <h2>Demande d'ami après un scan de QR code</h2>
+  <p>Quand tu scannes le QR code d'un ami, ton téléphone lui envoie ton identité (ton nom, ton identifiant et ta clé) en Bluetooth, dès qu'il est à portée, pour qu'il t'ajoute en retour. Cette demande est <strong>chiffrée avec la clé de son QR code</strong> : seule une personne qui possède ce QR code peut la fabriquer ou la lire. Il doit l'accepter ; tant qu'il ne l'a pas fait, vous ne vous voyez pas l'un l'autre. S'il refuse, plus aucune demande ne lui est envoyée.</p>
+
+  <h2>Relais entre amis</h2>
+  <p>Pour que tes amis puissent estimer à quelle distance se trouvent d'autres amis hors de leur portée, ton téléphone diffuse en Bluetooth, <strong>pour chacun de tes amis proches, un fragment du jeton aléatoire de cet ami et la distance à laquelle tu le captes</strong>. Aucun nom ni identifiant n'est diffusé : seules les personnes qui ont déjà cet ami dans leur liste peuvent rattacher l'information à lui. Elle n'est utilisée que par l'appli de tes amis, pour afficher « hors de portée · via un ami » avec une fourchette de distance.</p>
 
   <h2>Autorisations demandées</h2>
   <ul>
